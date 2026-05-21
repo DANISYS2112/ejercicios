@@ -1,0 +1,18 @@
+#!/bin/bash
+echo "Ingrese la ruta del archivo"
+read archivo
+
+if [ -e "$archivo" ]; then
+	echo "El archivo existe."
+	if [ -d "$archivo" ]; then
+	echo "Es un directorio."
+	else
+	echo "Es un archivo regular."
+	lineas=$(wc -l < "$archivo")
+	echo "El archivo tiene $lineas lineas."
+	fi
+else
+	echo "El archivo no existe."
+fi
+
+

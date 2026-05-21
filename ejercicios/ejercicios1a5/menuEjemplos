@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Menu de ejercicios
+
+while true; do
+ echo "Seleccione una opcion:"
+ echo "1. Calculadora"
+ echo "2. Comprobador de archivos"
+ echo "3. Menu de Informacion del Sistema"
+ echo "4. Gestion de Archivos de Registro"
+ echo "5. Control de Tareas en Ejecucion"
+ echo "0. Salir"
+read opcion
+
+case $opcion in
+ 1) ./calculadora;;
+ 2) ./comprobador;;
+ 3) ./menuInfo;;
+ 4) ./gestion;;
+ 5) ./tareas;;
+ 0) exit;;
+ *) echo "Opcion invalida.";;
+esac
+done

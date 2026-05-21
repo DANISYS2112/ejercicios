@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "Seleccione una opcion:"
+echo "1. Listar procesos"
+echo "2. Buscar proceso por nombre"
+echo "3. Terminar proceso"
+read opcion
+
+case $opcion in
+ 1) ps aux;;
+ 2) echo "Ingrese el nombre del proceso:"; read proceso; ps aux | grep $proceso;;
+ 3) echo "Ingrese el PID del proceso a terminar:"; read pid; kill $pid;;
+ *) echo "Opcion invalida";;
+esac

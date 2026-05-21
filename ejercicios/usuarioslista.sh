@@ -1,0 +1,30 @@
+
+#!/bin/bash
+
+# Verifica si el usuario que ejecuta el script tiene privilegios de root
+if [ "$EUID" -ne 0 ]; then
+  echo "Por favor, ejecuta este script con privilegios de administrador (sudo)."
+  exit 1
+fi
+
+# Archivo con nombres de usuario
+archivo="usuarios.txt"
+
+# Verifica si el archivo existe
+if [ ! -f "$archivo" ]; then
+  echo "El archivo $archivo no existe."
+  exit 1
+fi
+
+# Lee el archivo y crea usuarios
+for usuario in $(cat $archivo); do
+  # Verifica si el usuario ya existe
+  if id "$usuario" &>/dev/null; then
+    echo "El usuario '$usuario' ya existe. Saltando..."
+  else
+    # Crea el usuario y asigna una contraseña por defecto (puedes cambiarla posteriormente)
+    useradd -m "$usuario"
+    echo "$usuario:1234" | chpasswd
+    echo "Usuario '$usuario' creado con éxito."
+  fi
+done

@@ -1,0 +1,4 @@
+menu(){
+echo "hola mundo"
+}
+menu

@@ -1,0 +1,20 @@
+#!/bin/bash
+
+logfile="log.txt"
+
+while true; do
+ echo "Seleccione una opcion:"
+ echo "1. Crear archivo de log"
+ echo "2. Agregar entrada al log"
+ echo "3. Mostrar contenido del log"
+ echo "4. Salir"
+read opcion
+
+case $opcion in
+1) touch $logfile;;
+2) echo "$(date)" >> $logfile;;
+3) cat $logfile;;
+4) exit;;
+*) echo "Opcion invalida";;
+esac
+done

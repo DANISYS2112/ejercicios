@@ -1,0 +1,10 @@
+Filesystem      Size  Used Avail Use% Mounted on
+rootfs          223G  221G  2.9G  99% /
+none            223G  221G  2.9G  99% /dev
+none            223G  221G  2.9G  99% /run
+none            223G  221G  2.9G  99% /run/lock
+none            223G  221G  2.9G  99% /run/shm
+none            223G  221G  2.9G  99% /run/user
+tmpfs           223G  221G  2.9G  99% /sys/fs/cgroup
+C:\             223G  221G  2.9G  99% /mnt/c
+D:\             932G  533G  400G  58% /mnt/d

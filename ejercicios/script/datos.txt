@@ -1,0 +1,4 @@
+el nombre es: juan
+el apellido es: perez
+el nombre es: daniel
+el apellido es: falero

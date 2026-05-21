@@ -1,0 +1,9 @@
+
+pan -  100
+leche -  150
+
+
+
+Subtotal -             250
+IVA -                  55
+Total -                305

@@ -1,0 +1,7 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0   8952   328 ?        Ssl  07:08   0:00 /init
+root         8  0.0  0.0   8952   228 tty1     Ss   07:08   0:00 /init
+root        46  0.0  0.0  26080  5416 tty1     S    07:27   0:00 sudo su
+root        47  0.0  0.0  21556  3008 tty1     S    07:27   0:00 su
+root        48  0.0  0.0  16888  5352 tty1     S    07:27   0:00 bash
+root        86 50.0  0.0  15052  1924 tty1     R    07:30   0:00 ps ux

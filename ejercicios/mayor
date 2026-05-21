@@ -1,0 +1,26 @@
+#!/bin/bash
+menu(){
+echo "1) mayor"
+echo "2) igual"
+echo "3) menor"
+read op
+case $op in
+1)mayor;;
+2)igual;;
+3)menor;;
+4)distinto;;
+esac
+}
+mayor(){
+echo ingrese dos numeros
+echo ingrese primer numero
+read num1
+echo ingrese segundo numero
+read num2
+if [ $num1 -gt $num2 ]
+then
+echo el primer numero es mayor que el segundo
+else
+echo el segundo es mayor que el primero
+fi
+}

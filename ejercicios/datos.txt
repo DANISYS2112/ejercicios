@@ -1,0 +1,3 @@
+nombre: pedro apellido: ibarra nacimiento: 1986 cedula 12345
+nombre: pablo apellido: perez nacimiento: 4567 cedula 4567
+nombre: eric apellido: berro nacimiento: 1980 cedula 556633
